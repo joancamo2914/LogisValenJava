@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soy un test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>esta es una prueba</h1>
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Password</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="usuario : ${listaUsuarios}">
+                <td th:text="${usuario.Usuario}">Usuario</td>
+                <td th:text="${usuario.Password}">Password</td>
+                <td th:text="${usuario.Rol}">Rol</td>
+            </tr>
+    </table>
+    </div>
+    <div>
+        <h2>crear factura</h2>
+        <input type="text" id="newUsuario" name="newUsuario" th:field="*{newUsuario}" placeholder="escriba el usuario" />
+        <input type="text" id="newPass" name="newPass"th:field="*{newPass}" placeholder="escriba la contraseña" />
+        <input type="text" id="newRol" name="newRol"th:field="*{newRol}" placeholder="nuevo Rol" />   
+
+    </div>
+
+</body>
+</html>

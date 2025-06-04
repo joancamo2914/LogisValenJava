@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ValenApplication<Valen>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.Logis.Valen.ValenApplication",
+            "projectName": "Valen",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
